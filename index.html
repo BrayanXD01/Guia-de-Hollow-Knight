@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía: Hollow Knight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            margin: 0; 
+            background-image: url('fondo.png'); 
+            background-size: cover;      
+            background-attachment: scroll; 
+            background-position: center; 
+            color: white; 
+        }
+        
+        .navbar { width: 100%; padding: 40px 0; display: flex; justify-content: center; }
+        .logo-img { width: 80%; max-width: 800px; height: auto; display: block; }
+        
+        .hero { text-align: center; padding: 20px 20px 60px 20px; }
+        h1 { font-size: 3rem; margin: 10px 0; }
+        p { color: #e0e0e0; font-size: 1.1rem; margin-bottom: 40px; }
+
+        /* Grid ajustado a 2 columnas */
+        .guia-grid { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); /* Fuerza 2 columnas */
+            gap: 25px; 
+            padding: 20px 40px; 
+            max-width: 900px; /* Un poco más estrecho para que los 2 cuadros luzcan mejor */
+            margin: 0 auto; 
+            margin-bottom: 50px;
+        }
+        
+        .card-link { text-decoration: none; color: inherit; }
+        
+        .card { 
+            background: rgba(26, 26, 26, 0.8); 
+            padding: 30px; 
+            border-radius: 24px; 
+            text-align: center; 
+            border: 1px solid #444; 
+            transition: transform 0.2s; 
+        }
+        
+        .card:hover { transform: translateY(-5px); border-color: #ffd700; }
+        .icon { font-size: 3rem; margin-bottom: 15px; }
+
+    .video-fondo {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;  
+     height: 100%;
+     object-fit: cover;
+     z-index: -1;
+    
+     transform: scale(1.2);
+     transform-origin: center;
+    }
+
+    </style>
+</head>
+<body>
+
+    <video autoplay loop muted playsinline class="video-fondo">
+    <source src="video/fondo.mp4" type="video/mp4">
+    </video>
+
+    <header class="navbar">
+        <img src="imagenes/hollow logo.png" alt="Logo de Hollow Knight" class="logo-img">
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Bienvenido a Hallownest</h1>
+            <p>En esta mini-guía de este hermoso juego llamado Hollow Knight, se estarán dando a conocer las mecánicas <br>
+                básicas, los amuletos, mapas y un poco de la historia de esta obra maestra.</p>
+        </div>
+
+        <div class="guia-grid">
+    <!-- Mecánicas Básicas -->
+    <a href="mecanicas_basicas.html" class="card-link">
+    <div class="card">
+        <!-- Imagen con width: 150px -->
+        <img src="imagenes/caballerito.png" alt="Caballerito" style="width: 150px; height: auto; margin-bottom: 20px;">
+        <h3>Mecánicas Básicas</h3>
+        <p>Aprende a usar el aguijon y sus diversas habilidades.</p>
+    </div>
+</a>
+
+<!-- Bloque Habilidades -->
+<a href="habilidades.html" class="card-link">
+    <div class="card">
+        <!-- Imagen con el MISMO width: 150px -->
+        <img src="imagenes/alas.png" alt="Habilidades" style="width: 160px; height: auto; margin-bottom: 20px;">
+        <h3>Habilidades</h3>
+        <p>Aprende como se usan las diversas habilidades que tiene nuestro caballero.</p>
+    </div>
+</a>
+
+    <a href="amuletos.html" class="card-link">
+    <div class="card">
+        <!-- Imagen brujula.png con tamaño unificado -->
+        <img src="imagenes/brujula.png" alt="Amuletos" style="width: 150px; height: auto; margin-bottom: 20px;">
+        <h3>Amuletos</h3>
+        <p>Aprende y averigua para que funcionan los amuletos dentro de Hollow Knight.</p>
+    </div>
+</a>
+
+    <!-- Bloque Mercaderes y Mapa actualizado con pluma.png -->
+<a href="mercaderes.html" class="card-link">
+    <div class="card">
+        <!-- Imagen pluma.png con el tamaño unificado -->
+        <img src="imagenes/pluma.png" alt="Mercaderes y Mapa" style="width: 180px; height: auto; margin-bottom: 20px;">
+        <h3>Mercaderes y Mapa</h3>
+        <p>Aqui encontraras lo que son los mercaderes y el mapa de Hollow Knight</p>
+    </div>
+</a>
+
+</div>
+    </main>
+
+</body>
+</html>
