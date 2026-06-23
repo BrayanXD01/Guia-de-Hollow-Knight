@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Aguijón: Hollow Knight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            margin: 0; 
+            background-image: url('fondo.png'); 
+            background-size: cover;      
+            background-attachment: scroll; 
+            background-position: center; 
+            color: white; 
+        }
+
+        /* Botón izquierdo: Volver a Mecánicas Básicas */
+        .btn-left {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: rgba(26, 26, 26, 0.9);
+            border: 1px solid #ffd700;
+            color: #ffd700;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            z-index: 1000;
+        }
+
+        /* Botón derecho: Volver a Inicio */
+        .btn-right {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: rgba(26, 26, 26, 0.9);
+            border: 1px solid #ffd700;
+            color: #ffd700;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            z-index: 1000;
+        }
+
+        .btn-left:hover, .btn-right:hover {
+            background-color: #ffd700;
+            color: black;
+        }
+        
+        .navbar { width: 100%; padding: 40px 0; display: flex; justify-content: center; }
+        .logo-img { width: 80%; max-width: 800px; height: auto; display: block; }
+
+        .contenido-main { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+        .seccion-cuadro {
+            background: rgba(26, 26, 26, 0.8);
+            padding: 30px;
+            border-radius: 24px;
+            border: 1px solid #444;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .img-cuadro {
+            float: left;            
+            width: 140px;           
+            height: auto;
+            margin-right: 25px;     
+            margin-bottom: 10px;    
+            border-radius: 12px;
+            border: 2px solid #ffd700;
+        }
+
+        h2 { color: #ffd700; margin-top: 0; }
+        p { line-height: 1.6; font-size: 1.1rem; text-align: justify; }
+
+    .video-fondo {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;  
+     height: 100%;
+     object-fit: cover;
+     z-index: -1;
+    
+     transform: scale(1.2);
+     transform-origin: center;
+    }
+    </style>
+    </head>
+    <body>
+
+    <video autoplay loop muted playsinline class="video-fondo">
+    <source src="video/fondo.mp4" type="video/mp4">
+    </video>
+
+    <!-- Nuevo botón izquierdo -->
+    <a href="mecanicas_basicas.html" class="btn-left">← Mecánicas Básicas</a>
+    
+    <!-- Botón derecho (Inicio) -->
+    <a href="index.html" class="btn-right">Inicio →</a>
+
+    <header class="navbar">
+        <img src="imagenes/hollow logo.png" alt="Logo de Hollow Knight" class="logo-img">
+    </header>
+
+    <main class="contenido-main">
+        <!-- Cuadro del aguijón -->
+        <div class="seccion-cuadro">
+            <img src="imagenes/aguijon.png" alt="Aguijón" class="img-cuadro">
+            <h2>El Aguijón</h2>
+            <p>
+                En Hollow Knight, nuestra arma principal será el aguijón, una arma tipo cuerpo a cuerpo que se puede pegar en las 4 direcciones 
+                (arriba, abajo, izquierda y derecha). Cada vez que la mejoremos mientras avancemos en el juego, más daño logrará hacer. Las mejoras
+                 se podrán hacer en Páramos Fúngicos en el área del Forja Aguijones (se verá más adelante). Es lo que más tendremos que dominar a
+                  la hora de combatir, así que practicar contra enemigos menores atacándolos de todas las direcciones, es lo ideal para ir mejorando.<br>
+                  Consejo: a la hora de hacer un golpe hacia abajo, si estamos sobre pinchos, podremos hacer un parry, el cual tambien funciona con
+                  ciertos enemigos al pegar justo cuando el enemigo ataca.
+            </p>
+        </div>
+
+        <!-- Segundo cuadro: Artes de Aguijones -->
+        <div class="seccion-cuadro">
+            <img src="imagenes/arte.png" alt="Artes de Aguijón" class="img-cuadro">
+            <h2>Artes de Aguijones</h2>
+            <p>
+                En Hollow Knight tambien encontraremos habilidades que nos ayudaran a ser mas "versatiles" algunas de estas Artes son las 
+                de los aguijones, las cuales se consiguen explorando por el mapa de hallownest y encontrando a los maestros de los
+                aguijones (Maestros de los aguijones Oro, Mato y Sheo) los cuales nos otorgaran 3 habilidades que nos hacen hacer mucho daño 
+                si sabemos usarlas (Corte Ciclón, Gran Corte y Corte Veloz) las cuales se activaran al momento de mantener precionado el 
+                boton de ataque y esperar unos segundos, cada habilidad dependera de lo que estes haciendo en el momento.
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>

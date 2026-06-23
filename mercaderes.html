@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercaderes y Mapa - Hollow Knight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            margin: 0; 
+            background-image: url('fondo.png'); 
+            background-size: cover;      
+            background-attachment: scroll; 
+            background-position: center; 
+            color: black; 
+        }
+
+        .btn-right {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: rgba(26, 26, 26, 0.9);
+            border: 1px solid #ffd700;
+            color: #ffd700;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            z-index: 1000;
+        }
+
+        .btn-right:hover {
+            background-color: #ffd700;
+            color: black;
+        }
+        
+        .navbar { width: 100%; padding: 40px 0; display: flex; justify-content: center; }
+        .logo-img { width: 80%; max-width: 800px; height: auto; display: block; }
+
+        .contenido-main { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+        .seccion-cuadro {
+            background: rgba(26, 26, 26, 0.8);
+            padding: 30px;
+            border-radius: 24px;
+            border: 1px solid #444;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        h2 { color: #ffd700; margin-top: 0; }
+        p { line-height: 1.6; font-size: 1.1rem; text-align: justify; }
+    .video-fondo {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;  
+     height: 100%;
+     object-fit: cover;
+     z-index: -1;
+    
+     transform: scale(1.2);
+     transform-origin: center;
+    }
+    </style>
+    </head>
+    <body>
+
+    <video autoplay loop muted playsinline class="video-fondo">
+    <source src="video/fondo.mp4" type="video/mp4">
+    </video>
+
+    <a href="index.html" class="btn-right">Inicio →</a>
+
+    <header class="navbar">
+        <img src="imagenes/hollow logo.png" alt="Logo de Hollow Knight" class="logo-img">
+    </header>
+
+    <main class="contenido-main">
+        
+        <!-- Bloque de Mercaderes -->
+        <div class="seccion-cuadro">
+            <!-- AQUÍ ESTÁ EL CAMBIO IMPORTANTE: He añadido el estilo style="width: 140px; float: left; margin-right: 25px;" -->
+            <img src="imagenes/cornifer.png" alt="Mercaderes de Hollow Knight" class="img-cuadro" style="width: 140px; float: left; margin-right: 25px;">
+            <h2>Mercaderes de Hollow Knight</h2>
+            <p>
+                A lo largo de Hallownest, encontrarás diversos personajes que ofrecen objetos, amuletos y mejoras vitales a cambio de Geo. Interactuar con ellos es fundamental para prepararte adecuadamente antes de enfrentarte a los jefes más difíciles o explorar las áreas más profundas y peligrosas del reino.
+            </p>
+        </div>
+
+        <!-- Bloque de Mapa de Hallownest (Título y Mapa grande) -->
+        <div class="seccion-cuadro" style="text-align: center;">
+            <h2>Mapa de Hallownest</h2>
+            <img src="imagenes/mapa.png" alt="Mapa de Hallownest" style="width: 100%; max-width: 600px; height: auto; border-radius: 12px; border: 2px solid #ffd700; margin-top: 15px;">
+        </div>
+
+        <!-- Bloque de Mapa de Hallownest sin detalles -->
+        <div class="seccion-cuadro" style="text-align: center;">
+            <h2>Mapa de Hallownest pero sin detalles</h2>
+            <img src="imagenes/mapa2.png" alt="Mapa sin detalles" style="width: 100%; max-width: 600px; height: auto; border-radius: 12px; border: 2px solid #ffd700; margin-top: 15px;">
+        </div>
+
+    </main>
+
+</body>
+</html>
